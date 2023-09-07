@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(86, 208, 208);
+
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.dropdown {
+  width: 400px;
+  user-select: none;
+  margin: 100px auto;
+  position: relative;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.dropdown .dropdown-btn {
+  padding: 15px 20px;
+  background: white;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 110%;
+  padding: 15px;
+  background: white;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: bold;
+  color: #333;
+  width: 92%;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dropdown .dropdown-content .dropdown-item:hover{
+  background: #e0dddde9;
+}
+
+.caret {
+  position: relative;
+  cursor: pointer;
+  margin-inline: 30px;
+}
+
+.caret:before {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 12px;
+  border-top: 12px solid #302f2f;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+
+.caret:after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 13px;
+  border-top: 11px solid #fff;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+}
